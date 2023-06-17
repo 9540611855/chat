@@ -1,0 +1,24 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/tab_conversation">
+
+    <fragment
+        android:id="@+id/tab_contacts"
+        android:name="com.pipixia.chat.ui.fragment.ContactFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/tab_conversation"
+        android:name="com.pipixia.chat.ui.fragment.ConversationFragment"
+        android:label="@string/message"
+        tools:layout="@layout/fragment_conversation" />
+
+    <fragment
+        android:id="@+id/tab_dynamic"
+        android:name="com.pipixia.chat.ui.fragment.DynamicFragment"
+        android:label="@string/dynamic"
+        tools:layout="@layout/fragment_dynamic"/>
+</navigation>
